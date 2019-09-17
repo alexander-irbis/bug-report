@@ -1,7 +1,15 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
+pub trait MyTrait {
+    fn a(&self);
+}
+
+pub struct MyStruct {}
+
+impl MyTrait for MyType {
+    fn a(&self) {
+        unimplemented!()
     }
+}
+
+pub fn my_fn() {
+    unimplemented!()
 }
